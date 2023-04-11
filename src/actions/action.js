@@ -1,6 +1,3 @@
-nes (26 sloc)  444 Bytes
- 
-
 export const addNumber=()=>{
     return{
         type: 'INCREMENT'
@@ -16,5 +13,18 @@ export const subNumber=()=>{
 export const handlelogin=()=>{
     return{
         type: 'SIGN_IN'
+    }
+}
+
+export const handlelogout=()=>{
+    return{
+        type: 'SIGN_OUT'
+    }
+}
+
+export const addAmount=(val)=>{
+    return{
+        type: 'INCREMENTBYAMOUNT',
+        payload: val
     }
 }
